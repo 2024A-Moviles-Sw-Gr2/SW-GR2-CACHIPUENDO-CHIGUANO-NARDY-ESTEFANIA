@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "179523105071",
+    "project_id": "necc-2024a-sw-gr2",
+    "storage_bucket": "necc-2024a-sw-gr2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:179523105071:android:6bfd17589f47b973b531da",
+        "android_client_info": {
+          "package_name": "com.example.a2024aswgr2necc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBafEVmZTGIci_hc0sX_vMRPTmfOSMnuBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
