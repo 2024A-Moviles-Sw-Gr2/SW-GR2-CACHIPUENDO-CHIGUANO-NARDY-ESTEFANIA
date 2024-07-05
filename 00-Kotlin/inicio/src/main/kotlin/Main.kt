@@ -44,7 +44,7 @@ fun main(){
             println("Soltero")
         }
         else ->{
-            println("K")
+            println("No descrito")
         }
     }
     val esSoltero = (estadoCivilWhen == "S")
