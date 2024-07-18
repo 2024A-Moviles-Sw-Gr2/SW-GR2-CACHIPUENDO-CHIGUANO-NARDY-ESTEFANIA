@@ -89,7 +89,7 @@ class ESqliteHelperEntrenador (
         conexionEscritura.close()
         return if (resultadoActualizacion.toInt() == -1) false else true
     }
-    fun consultarEntrenadorPorID(id:Int): BEntrenador {
+    fun consultarEntrenadorPorID(id:Int): BEntrenador? {
         val baseDatosLectura = readableDatabase
         val scriptConsultaLectura ="""
             SELECT * FROM ENTRENADOR WHERE ID = ?
@@ -122,6 +122,9 @@ class ESqliteHelperEntrenador (
         }
         resultadosConsultaLectura.close()
         baseDatosLectura.close()
-        return arregloRespuesta[0]
+        // ESqliteHelperEntrenador.consultarPorEntrenadorPorID
+
+        return if(arregloRespuesta.size>0) arregloRespuesta[0] else null
+
     }
     }
