@@ -115,6 +115,19 @@ class MainActivity : AppCompatActivity() {
         botonSqlite.setOnClickListener {
             irActividad (ECrudEntrenador::class.java)
         }
+        val botonRView = findViewById<Button>(R.id.btn_recycler_view)
+        botonRView.setOnClickListener {
+            irActividad (FRecyclerView::class.java)
+        }
+        val botonGMaps = findViewById<Button>(R.id.btn_google_maps)
+        botonGMaps.setOnClickListener {
+            irActividad (GGoogleMapsActivity::class.java)
+        }
+        val botonFirebaseUI = findViewById<Button>(R.id.btn_intent_firebase_ui)
+        botonFirebaseUI.setOnClickListener {
+            irActividad (HFirebaseUIAuth::class.java)
+        }
+
 
     }
         // navegar por actividades

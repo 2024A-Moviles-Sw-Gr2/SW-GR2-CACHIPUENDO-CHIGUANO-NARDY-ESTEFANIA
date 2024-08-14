@@ -66,7 +66,7 @@ class ECrudEntrenador : AppCompatActivity() {
                     descripcion.text.toString(),
                     id.text.toString().toInt()
                 )
-                if (respuesta) mostrarSnackbar("Entr. actualizado!")
+            if (respuesta) mostrarSnackbar("Entr. actualizado!")
         }
 
         val botonEliminarBDD = findViewById<Button>(R.id.btn_eliminar_bdd)

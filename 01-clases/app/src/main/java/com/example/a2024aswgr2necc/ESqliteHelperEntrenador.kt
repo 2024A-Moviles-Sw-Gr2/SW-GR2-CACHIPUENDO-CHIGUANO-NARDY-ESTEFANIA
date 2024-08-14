@@ -43,8 +43,8 @@ class ESqliteHelperEntrenador (
                 null,
                 valoresAGuardar // valores
             )
-            basedatosEscritura.close()
-            return if (resultadoGuardar.toInt() == -1) false else true
+        basedatosEscritura.close()
+        return if (resultadoGuardar.toInt() == -1) false else true
     }
 
 
