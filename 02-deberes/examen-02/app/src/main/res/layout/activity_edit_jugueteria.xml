@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".EditJugueteriaActivity">
+
+    <EditText
+        android:id="@+id/editTextToyStoreName"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:hint="Nombre de Jugueteria" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Dirección" />
+
+    <EditText
+        android:id="@+id/editTextCreationDate"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:hint="Fecha de Creación (YYYY-MM-DD)" />
+
+    <EditText
+        android:id="@+id/editTextTotalToys"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:hint="Número Total de Juguetes" />
+
+    <!-- New EditText for Latitude -->
+    <EditText
+        android:id="@+id/editTextLatitude"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Latitud"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <!-- New EditText for Longitude -->
+    <EditText
+        android:id="@+id/editTextLongitude"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:hint="Longitud"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
