@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SW2024AGR2D03NECC</string>
+    <string name="add_tweet">Add a new tweet</string>
+
+    <!-- Strings for Toolbar elements -->
+    <string name="user_image">User Image</string>
+    <string name="twitter_logo">Twitter Logo</string>
+    <string name="settings">Settings</string>
+
+    <!-- Additional strings for accessibility and general use -->
+    <string name="comment">Comment</string>
+    <string name="retweet">Retweet</string>
+    <string name="like">Like</string>
+</resources>

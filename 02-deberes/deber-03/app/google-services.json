@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "852638725375",
+    "project_id": "necc-2024a-sw-gr2-deber03",
+    "storage_bucket": "necc-2024a-sw-gr2-deber03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852638725375:android:8729e510d17b5747c408ca",
+        "android_client_info": {
+          "package_name": "com.example.sw2024agr2d03necc"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZjcOOG0Vg98NVBmKnC2jLKilmAsFCbTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

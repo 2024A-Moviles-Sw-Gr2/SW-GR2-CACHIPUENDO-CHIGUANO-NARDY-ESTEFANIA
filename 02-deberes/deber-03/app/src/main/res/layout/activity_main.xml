@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- AppBar Layout -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Custom Toolbar with Images and Title -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:elevation="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- User Image -->
+            <ImageView
+                android:id="@+id/userImage"
+                android:layout_width="@dimen/standard_image"
+                android:layout_height="@dimen/standard_image"
+                android:adjustViewBounds="false"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/user_image"
+                android:padding="7dp"
+                android:soundEffectsEnabled="false"
+                android:src="@drawable/default_user" />
+
+            <!-- Logo in the center -->
+            <ImageView
+                android:id="@+id/logoImage"
+                android:layout_width="@dimen/standard_image"
+                android:layout_height="@dimen/standard_image"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/twitter_logo"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/twitter" />
+
+            <!-- Settings Icon -->
+            <ImageView
+                android:id="@+id/settingsIcon"
+                android:layout_width="@dimen/standard_image"
+                android:layout_height="@dimen/standard_image"
+                android:background="#00FFFFFF"
+                android:contentDescription="@string/settings"
+                android:padding="10dp"
+                android:src="@drawable/ajuste" />
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!-- Tab Layout -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        app:tabIndicatorColor="@android:color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:icon="@drawable/home"
+            android:text="Home" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabNotifications"
+            android:icon="@drawable/bell"
+            android:text="Notifications" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- ViewPager for swiping between tabs -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabs" />
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid3"
+        android:tint="@color/white"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/white"
+        app:srcCompat="@drawable/feather" />
+
+
+    <LinearLayout
+        android:id="@+id/homeProgressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

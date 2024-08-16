@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SW2024AGR2D03NECC" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="LinkText">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!-- Change the background color of the AppBar -->
+        <item name="android:background">@color/colorPrimaryDark</item>
+
+        <!-- Change the elevation to give depth to the AppBar -->
+        <item name="android:elevation">4dp</item>
+
+        <!-- Change the title text color -->
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <!-- Customizing the action menu text appearance -->
+        <item name="actionMenuTextColor">@color/white</item>
+
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Customize popup background color -->
+        <item name="android:background">@color/white</item>
+        <!-- Customize text color for menu items -->
+        <item name="android:textColor">@color/black</item>
+        <!-- You can also set other popup attributes like list selectors and dividers -->
+    </style>
+
+
+
+    <style name="Theme.SW2024AGR2D03NECC" parent="Base.Theme.SW2024AGR2D03NECC" />
+</resources>
