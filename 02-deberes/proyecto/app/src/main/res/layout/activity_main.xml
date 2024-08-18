@@ -49,4 +49,9 @@
         android:text="@string/start_button"
         android:textColor="@color/white" />
 
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonStart" />
 </RelativeLayout>

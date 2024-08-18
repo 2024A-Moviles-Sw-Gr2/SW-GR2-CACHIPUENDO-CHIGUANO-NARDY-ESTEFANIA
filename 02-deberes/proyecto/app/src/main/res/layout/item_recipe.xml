@@ -29,6 +29,12 @@
             android:textAppearance="@style/S" />
     </LinearLayout>
 
+
+
+
+
+
+
     <!-- Imagen de la receta -->
     <ImageView
         android:id="@+id/recipe_image"

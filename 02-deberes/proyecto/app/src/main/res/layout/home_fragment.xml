@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -13,9 +12,7 @@
         android:padding="4dp"
         android:queryHint="Buscar" />
 
-
     <!-- Botones de Categoría -->
-    <!-- TEXT vIEW DE CATEGORIA -->
     <TextView
         android:id="@+id/tvCategories"
         android:layout_width="wrap_content"
@@ -25,7 +22,6 @@
         android:text="Categorías"
         android:textAppearance="@style/H2"
         android:textSize="20sp" />
-    <!-- Se utiliza un LinearLayout con tres botones -->
 
     <LinearLayout
         android:id="@+id/llCategories"
@@ -43,9 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5sp"
             android:layout_weight="1"
-            android:background="@drawable/background_button_selected"
-            android:text="Todo"
-            android:textAppearance="@style/P2" />
+            android:text="Todo" />
 
         <Button
             style="@style/ButtonSelected"
@@ -53,8 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5sp"
             android:layout_weight="1"
-            android:text="Entrada"
-            android:textAppearance="@style/P2" />
+            android:text="Entrada" />
 
         <Button
             style="@style/ButtonSelected"
@@ -62,20 +55,18 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5sp"
             android:layout_weight="1"
-            android:text="Plato Fuerte"
-            android:textAppearance="@style/P2" />
+            android:text="Plato Fuerte" />
     </LinearLayout>
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
+        android:layout_height="1dp"
         android:layout_below="@id/llCategories"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:background="@color/light_gray" />
 
-    <!-- TEXT vIEW DE CATEGORIA -->
     <TextView
         android:id="@+id/tvRecipes"
         android:layout_width="wrap_content"
@@ -85,13 +76,13 @@
         android:text="Recetas Populares"
         android:textAppearance="@style/H2"
         android:textSize="15sp" />
-    <!-- Fragmento para Recetas Populares -->
-    <FrameLayout
-        android:id="@+id/fragmentContainer"
+
+    <!-- RecyclerView para mostrar las recetas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvRecipes"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="match_parent"
         android:layout_below="@id/tvRecipes"
-        android:layout_weight="1" />
-
-
+        android:padding="8dp"
+        android:scrollbars="vertical" />
 </RelativeLayout>

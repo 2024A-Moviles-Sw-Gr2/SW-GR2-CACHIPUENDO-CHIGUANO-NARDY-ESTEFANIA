@@ -24,7 +24,9 @@ class RecipeListActivity : AppCompatActivity() {
         }
         // Inicia con el HomeFragment
         if (savedInstanceState == null) {
-            bottomNavigationView.selectedItemId = R.id.nav_home
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.main_fragment_container, HomeFragment())
+                .commit()
         }
     }
 

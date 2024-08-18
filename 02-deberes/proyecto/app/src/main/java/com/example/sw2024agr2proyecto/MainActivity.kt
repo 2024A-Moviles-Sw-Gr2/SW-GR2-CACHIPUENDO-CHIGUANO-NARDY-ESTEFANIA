@@ -16,7 +16,24 @@ class MainActivity : AppCompatActivity() {
         val buttonStart = findViewById<Button>(R.id.buttonStart)
         buttonStart.setOnClickListener {
             // Inicia una nueva actividad o maneja la autenticación con Firebase
-            startActivity(Intent(this, RecipeListActivity::class.java))
+            val intent = Intent(this, RecipeListActivity::class.java)
+            startActivity(intent)
+        }
+    }
+    private fun loadHomeFragment() {
+        val fragment = HomeFragment()
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .addToBackStack(null)
+            .commit()
+    }
+
+    override fun onBackPressed() {
+        val fragmentManager = supportFragmentManager
+        if (fragmentManager.backStackEntryCount > 0) {
+            fragmentManager.popBackStack()
+        } else {
+            super.onBackPressed()
         }
     }
 }
