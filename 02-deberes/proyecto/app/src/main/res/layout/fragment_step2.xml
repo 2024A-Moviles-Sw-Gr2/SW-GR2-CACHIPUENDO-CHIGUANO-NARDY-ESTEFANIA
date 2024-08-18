@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Botón para cancelar -->
+    <TextView
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Cancelar"
+        android:textAppearance="@style/H2"
+        android:textColor="@android:color/holo_red_light" />
+
+    <!-- Paso 2/2 -->
+    <TextView
+        android:id="@+id/step_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="-20dp"
+        android:text="2/2" />
+
+    <!-- Label para Ingredientes -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingredientes"
+        android:textAppearance="@style/H2" />
+
+
+    <!-- Ingredientes -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ingredient_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:hint="Ingrediente" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón para añadir nuevo ingrediente -->
+    <Button
+        android:id="@+id/add_ingredient_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/transparent"
+        android:text="+ Añade un nuevo ingrediente"
+        android:textColor="@color/yellow" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/llCategories"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/light_gray" />
+    <!-- Pasos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pasos"
+        android:textAppearance="@style/H2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/step_input"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:autoText="false"
+            android:background="@drawable/rounded_border"
+            android:hint="Ingresa el paso"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/P1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Botón para añadir nuevo paso -->
+    <Button
+        android:id="@+id/add_step_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Añadir nuevo paso"
+        android:textColor="@android:color/white" />
+
+    <!-- Botones para regresar y siguiente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/light_gray"
+            android:text="Regresar"
+            android:textColor="@color/dark_blue" />
+
+        <Button
+            android:id="@+id/next_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/yellow"
+            android:text="Siguiente"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>

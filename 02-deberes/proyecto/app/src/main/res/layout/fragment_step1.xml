@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Botón para cancelar -->
+    <TextView
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:text="Cancelar"
+        android:textAppearance="@style/H2"
+        android:textColor="@android:color/holo_red_light" />
+
+    <!-- Paso 1/2 -->
+    <TextView
+        android:id="@+id/step_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="-20dp"
+        android:text="1/2" />
+
+    <!-- Imagen del plato -->
+
+    <!-- Nombre del Plato -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="177dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/image_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/add_image"
+            android:src="@drawable/ic_image_placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Añade alguna imagen"
+            android:textColor="@android:color/darker_gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="(tamaño máximo de 12 Mb)"
+            android:textColor="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <!-- Label para Nombre del Plato -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Nombre del Plato"
+        android:textAppearance="@style/H2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:hint="Ingresa el nombre del plato"
+            android:textAppearance="@style/P1"
+            android:textColor="@color/black"
+            tools:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Label para Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Descripción"
+        android:textAppearance="@style/H2" />
+
+    <!-- Descripción -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/recipe_description_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_border"
+            android:hint="Añade una pequeña descripción"
+            android:textAppearance="@style/P1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tiempo de preparación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tiempo de Preparación (en minutos)"
+        android:textAppearance="@style/H2" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/preparation_time_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stepSize="5"
+        android:value="30"
+        android:valueFrom="0"
+        android:valueTo="60"
+        app:haloColor="@color/yellow"
+        app:thumbColor="@color/yellow"
+        app:tickColorActive="#BD8D14"
+        app:tickColorInactive="@color/gray"
+        app:trackColorActive="@color/yellow" />
+
+
+    <!-- Botón Siguiente -->
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/yellow"
+        android:text="Siguiente"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_border"
+    android:padding="16dp">
+
+    <!-- Imagen de la receta -->
+
+    <!-- Información de la receta -->
+    <ImageView
+        android:id="@+id/recipe_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:contentDescription="@string/recipe_image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_placeholder_recipe" />
+
+    <TextView
+        android:id="@+id/recipe_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pancakes de avena"
+        android:textAppearance="@style/H2"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/recipe_type_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desayuno · 60 mins"
+        android:textAppearance="@style/P1"
+        android:textColor="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/recipe_author_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_author_placeholder"
+            android:contentDescription="@string/author_image"
+            android:scaleType="centerCrop"
+            android:background="@drawable/round_image_background" />
+
+        <TextView
+            android:id="@+id/recipe_author_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="Martha Cantúña"
+            android:textAppearance="@style/H3" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/recipe_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.1/5"
+                android:textAppearance="@style/H3"
+                android:textColor="@color/blue" />
+
+            <Button
+                android:id="@+id/rate_recipe_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Califícame aquí"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginStart="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Descripción"
+        android:textAppearance="@style/H2"
+        android:textColor="@color/blue" />
+
+    <TextView
+        android:id="@+id/recipe_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Hechos con avena molida en lugar de harina, son una excelente fuente de fibra y energía."
+        android:textAppearance="@style/P2" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/light_gray" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingredientes"
+        android:textAppearance="@style/H2" />
+
+    <LinearLayout
+        android:id="@+id/recipe_ingredients_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <!-- Ingredientes se añadirán dinámicamente -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:drawableStart="@drawable/ic_check"
+            android:text="4 huevos"
+            android:textAppearance="@style/P2"
+            android:textColor="@color/dark_blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:drawableLeft="@drawable/ic_check"
+            android:text="1/2 taza de mantequilla"
+            android:textAppearance="@style/P2"
+            android:textColor="@color/blue" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:drawableStart="@drawable/ic_check"
+            android:text="1 taza de avena"
+            android:textAppearance="@style/P2"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/light_gray" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pasos"
+        android:textAppearance="@style/H2" />
+
+    <LinearLayout
+        android:id="@+id/recipe_steps_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp">
+
+        <!-- Pasos se añadirán dinámicamente -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. En una licuadora, agregar la avena y triturar hasta obtener una harina fina. Añadir la leche, el huevo, el plátano, el polvo de hornear, la esencia de vainilla y la sal."
+            android:textAppearance="@style/P2"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+</LinearLayout>
