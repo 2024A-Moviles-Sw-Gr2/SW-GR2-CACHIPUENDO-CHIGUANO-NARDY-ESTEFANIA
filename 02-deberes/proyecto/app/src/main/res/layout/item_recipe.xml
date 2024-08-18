@@ -26,7 +26,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Kevin López"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1" />
+            android:textAppearance="@style/S" />
     </LinearLayout>
 
     <!-- Imagen de la receta -->
@@ -45,9 +45,9 @@
         android:id="@+id/recipe_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Pancake"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-        android:layout_marginTop="8dp" />
+        android:textAppearance="@style/H2" />
 
     <!-- Calificación de la receta -->
     <LinearLayout
@@ -67,9 +67,10 @@
             android:id="@+id/recipe_rating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
             android:text="3.5/5"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-            android:layout_marginStart="4dp" />
+            android:textAppearance="@style/P2"
+            android:textColor="@color/blue" />
     </LinearLayout>
 
     <!-- Tipo de comida y tiempo -->
@@ -85,7 +86,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Desayuno"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textAppearance="@style/S"
             android:textColor="@android:color/darker_gray" />
 
         <ImageView
@@ -100,9 +101,9 @@
             android:id="@+id/recipe_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
             android:text="60 min"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
-            android:textColor="@android:color/darker_gray"
-            android:layout_marginStart="4dp" />
+            android:textAppearance="@style/S"
+            android:textColor="@android:color/darker_gray" />
     </LinearLayout>
 </LinearLayout>
